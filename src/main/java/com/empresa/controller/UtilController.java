@@ -23,7 +23,7 @@ public class UtilController {
 
 	@GetMapping("/deporte")
 	@ResponseBody
-	public ResponseEntity<List<Deporte>> listaAlumno(){
+	public ResponseEntity<List<Deporte>> listaDeporte(){
 		List<Deporte> lista = deporteService.listaDeporte();
 		return ResponseEntity.ok(lista);
 	}

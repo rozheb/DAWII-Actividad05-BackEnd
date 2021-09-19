@@ -28,7 +28,7 @@ public class ModalidadController {
 
 	@GetMapping
 	@ResponseBody
-	public ResponseEntity<List<Modalidad>> listaAlumno(){
+	public ResponseEntity<List<Modalidad>> listaModalidad(){
 		List<Modalidad> lista = modalidadService.listaModalidad();
 		return ResponseEntity.ok(lista);
 	}
